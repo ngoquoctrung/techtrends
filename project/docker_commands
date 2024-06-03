@@ -1,0 +1,43 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -d --name techtrends_app -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+docker logs techtrends_app
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:20:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:20:38] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:20:58] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:20:58] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:17] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:02/06/2024, 09:21:18, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:18] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:18] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:47] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:47] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:52] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:52] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:02/06/2024, 09:21:54, Article "New_post" retrieved!
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:54] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:21:54] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:22:09] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Status request successfull
+DEBUG:app:DEBUG message
+INFO:werkzeug:10.231.0.198 - - [02/Jun/2024 09:22:28] "GET /healthz HTTP/1.1" 200 -
